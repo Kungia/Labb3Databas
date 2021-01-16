@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseForm - Lundells Bookstore.cs">
+    <Compile Include="Baseform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaseForm - Lundells Bookstore.Designer.cs">
-      <DependentUpon>BaseForm - Lundells Bookstore.cs</DependentUpon>
+    <Compile Include="Baseform.Designer.cs">
+      <DependentUpon>Baseform.cs</DependentUpon>
     </Compile>
     <Compile Include="KöpSälj.cs">
       <SubType>Form</SubType>
@@ -58,22 +58,22 @@
     <Compile Include="KöpSälj.Designer.cs">
       <DependentUpon>KöpSälj.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lagersaldo - Lundells Bookstore.cs">
+    <Compile Include="Lagersaldo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lagersaldo - Lundells Bookstore.Designer.cs">
-      <DependentUpon>Lagersaldo - Lundells Bookstore.cs</DependentUpon>
+    <Compile Include="Lagersaldo.Designer.cs">
+      <DependentUpon>Lagersaldo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BaseForm - Lundells Bookstore.resx">
-      <DependentUpon>BaseForm - Lundells Bookstore.cs</DependentUpon>
+    <EmbeddedResource Include="Baseform.resx">
+      <DependentUpon>Baseform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KöpSälj.resx">
       <DependentUpon>KöpSälj.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lagersaldo - Lundells Bookstore.resx">
-      <DependentUpon>Lagersaldo - Lundells Bookstore.cs</DependentUpon>
+    <EmbeddedResource Include="Lagersaldo.resx">
+      <DependentUpon>Lagersaldo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,7 +1,7 @@
 ﻿
 namespace Labb_3___Databas
 {
-    partial class Lagersaldo___Lundells_Bookstore
+    partial class Lagersaldo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Labb_3___Databas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lagersaldo___Lundells_Bookstore));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lagersaldo));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.KöpSäljbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -40,6 +40,9 @@ namespace Labb_3___Databas
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -51,14 +54,16 @@ namespace Labb_3___Databas
             // 
             // KöpSäljbtn
             // 
+            this.KöpSäljbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.KöpSäljbtn.Location = new System.Drawing.Point(689, 412);
             this.KöpSäljbtn.Name = "KöpSäljbtn";
             this.KöpSäljbtn.Size = new System.Drawing.Size(99, 26);
             this.KöpSäljbtn.TabIndex = 10;
             this.KöpSäljbtn.Text = "Köp/Sälj";
             this.KöpSäljbtn.UseVisualStyleBackColor = true;
+            this.KöpSäljbtn.Click += new System.EventHandler(this.KöpSäljbtn_Click);
             // 
-            // Lagersaldo___Lundells_Bookstore
+            // Lagersaldo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -67,7 +72,7 @@ namespace Labb_3___Databas
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.Name = "Lagersaldo___Lundells_Bookstore";
+            this.Name = "Lagersaldo";
             this.Text = "Lagersaldo";
             this.Load += new System.EventHandler(this.Lagersaldo___Lundells_Bookstore_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

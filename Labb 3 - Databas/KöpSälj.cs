@@ -16,5 +16,11 @@ namespace Labb_3___Databas
         {
             InitializeComponent();
         }
+
+        private void Lagersaldoshortcut_Click(object sender, EventArgs e)
+        {
+            Lagersaldo lagersaldo = new Lagersaldo();
+            lagersaldo.Show();
+        }
     }
 }

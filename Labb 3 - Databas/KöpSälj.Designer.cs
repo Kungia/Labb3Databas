@@ -60,6 +60,7 @@ namespace Labb_3___Databas
             // 
             // Antal
             // 
+            this.Antal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Antal.AutoSize = true;
             this.Antal.Location = new System.Drawing.Point(237, 19);
             this.Antal.Name = "Antal";
@@ -69,6 +70,7 @@ namespace Labb_3___Databas
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(240, 39);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(93, 22);
@@ -76,6 +78,7 @@ namespace Labb_3___Databas
             // 
             // RadioKöp
             // 
+            this.RadioKöp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RadioKöp.AutoSize = true;
             this.RadioKöp.Location = new System.Drawing.Point(240, 84);
             this.RadioKöp.Name = "RadioKöp";
@@ -87,6 +90,7 @@ namespace Labb_3___Databas
             // 
             // RadioSälj
             // 
+            this.RadioSälj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RadioSälj.AutoSize = true;
             this.RadioSälj.Location = new System.Drawing.Point(240, 122);
             this.RadioSälj.Name = "RadioSälj";
@@ -98,6 +102,7 @@ namespace Labb_3___Databas
             // 
             // Executebtn
             // 
+            this.Executebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Executebtn.Location = new System.Drawing.Point(234, 161);
             this.Executebtn.Name = "Executebtn";
             this.Executebtn.Size = new System.Drawing.Size(99, 26);
@@ -107,6 +112,7 @@ namespace Labb_3___Databas
             // 
             // Transactionlabel
             // 
+            this.Transactionlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Transactionlabel.AutoSize = true;
             this.Transactionlabel.Location = new System.Drawing.Point(9, 223);
             this.Transactionlabel.Name = "Transactionlabel";
@@ -116,12 +122,14 @@ namespace Labb_3___Databas
             // 
             // Lagersaldoshortcut
             // 
+            this.Lagersaldoshortcut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Lagersaldoshortcut.Location = new System.Drawing.Point(15, 262);
             this.Lagersaldoshortcut.Name = "Lagersaldoshortcut";
             this.Lagersaldoshortcut.Size = new System.Drawing.Size(99, 26);
             this.Lagersaldoshortcut.TabIndex = 11;
             this.Lagersaldoshortcut.Text = "Lagersaldo";
             this.Lagersaldoshortcut.UseVisualStyleBackColor = true;
+            this.Lagersaldoshortcut.Click += new System.EventHandler(this.Lagersaldoshortcut_Click);
             // 
             // KöpSälj
             // 
@@ -137,8 +145,9 @@ namespace Labb_3___Databas
             this.Controls.Add(this.Antal);
             this.Controls.Add(this.SelectBooklabel);
             this.Controls.Add(this.BookSelect);
+            this.MaximumSize = new System.Drawing.Size(550, 450);
             this.Name = "KöpSälj";
-            this.Text = "Köp/Sälj";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Labb_3___Databas
 {
-    public partial class Lagersaldo___Lundells_Bookstore : Form
+    public partial class Lagersaldo : Form
     {
-        public Lagersaldo___Lundells_Bookstore()
+        public Lagersaldo()
         {
             InitializeComponent();
         }
@@ -20,6 +20,12 @@ namespace Labb_3___Databas
         private void Lagersaldo___Lundells_Bookstore_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void KöpSäljbtn_Click(object sender, EventArgs e)
+        {
+            KöpSälj köpSälj = new KöpSälj();
+            köpSälj.Show();
         }
     }
 }

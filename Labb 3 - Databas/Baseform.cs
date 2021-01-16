@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Labb_3___Databas
 {
-    public partial class BaseForm___Lundells_Bookstore : Form
+    public partial class BaseForm : Form
     {
-        public BaseForm___Lundells_Bookstore()
+        public BaseForm()
         {
             InitializeComponent();
         }
@@ -25,6 +25,19 @@ namespace Labb_3___Databas
         private void LagersaldoStoreSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LagersaldoBtn_Click(object sender, EventArgs e)
+        {
+            Lagersaldo lagersaldo = new Lagersaldo();
+            lagersaldo.Show();
+            
+        }
+
+        private void BuySellBtn_Click(object sender, EventArgs e)
+        {
+            KöpSälj köpsälj = new KöpSälj();
+            köpsälj.Show();
         }
     }
 }

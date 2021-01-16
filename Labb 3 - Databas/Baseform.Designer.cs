@@ -1,7 +1,7 @@
 ﻿
 namespace Labb_3___Databas
 {
-    partial class BaseForm___Lundells_Bookstore
+    partial class BaseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Labb_3___Databas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm___Lundells_Bookstore));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
             this.LagersaldoBtn = new System.Windows.Forms.Button();
             this.BuySellBtn = new System.Windows.Forms.Button();
             this.selectlabel = new System.Windows.Forms.Label();
@@ -38,21 +38,25 @@ namespace Labb_3___Databas
             // 
             // LagersaldoBtn
             // 
+            this.LagersaldoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.LagersaldoBtn.Location = new System.Drawing.Point(259, 115);
             this.LagersaldoBtn.Name = "LagersaldoBtn";
             this.LagersaldoBtn.Size = new System.Drawing.Size(124, 35);
             this.LagersaldoBtn.TabIndex = 0;
             this.LagersaldoBtn.Text = "Lagersaldo";
             this.LagersaldoBtn.UseVisualStyleBackColor = true;
+            this.LagersaldoBtn.Click += new System.EventHandler(this.LagersaldoBtn_Click);
             // 
             // BuySellBtn
             // 
+            this.BuySellBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuySellBtn.Location = new System.Drawing.Point(259, 50);
             this.BuySellBtn.Name = "BuySellBtn";
             this.BuySellBtn.Size = new System.Drawing.Size(124, 35);
             this.BuySellBtn.TabIndex = 1;
             this.BuySellBtn.Text = "Köp/Sälj";
             this.BuySellBtn.UseVisualStyleBackColor = true;
+            this.BuySellBtn.Click += new System.EventHandler(this.BuySellBtn_Click);
             // 
             // selectlabel
             // 
@@ -68,12 +72,14 @@ namespace Labb_3___Databas
             this.StoreSelect.FormattingEnabled = true;
             this.StoreSelect.ItemHeight = 16;
             this.StoreSelect.Location = new System.Drawing.Point(12, 50);
+            this.StoreSelect.MaximumSize = new System.Drawing.Size(202, 100);
+            this.StoreSelect.MinimumSize = new System.Drawing.Size(202, 100);
             this.StoreSelect.Name = "StoreSelect";
             this.StoreSelect.Size = new System.Drawing.Size(202, 100);
             this.StoreSelect.TabIndex = 2;
             this.StoreSelect.SelectedIndexChanged += new System.EventHandler(this.LagersaldoStoreSelect_SelectedIndexChanged);
             // 
-            // BaseForm___Lundells_Bookstore
+            // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -83,7 +89,10 @@ namespace Labb_3___Databas
             this.Controls.Add(this.BuySellBtn);
             this.Controls.Add(this.LagersaldoBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "BaseForm___Lundells_Bookstore";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(418, 231);
+            this.MinimumSize = new System.Drawing.Size(418, 231);
+            this.Name = "BaseForm";
             this.Text = "Lundells Bookstore";
             this.Load += new System.EventHandler(this.BaseForm___Lundells_Bookstore_Load);
             this.ResumeLayout(false);
