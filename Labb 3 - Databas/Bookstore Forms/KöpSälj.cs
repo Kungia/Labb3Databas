@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Labb_3___Databas.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,22 @@ namespace Labb_3___Databas
         public KöpSälj()
         {
             InitializeComponent();
+            using (var db = new LundellsBookstoreContext())
+            {
+
+
+            }
         }
 
         private void Lagersaldoshortcut_Click(object sender, EventArgs e)
         {
             Lagersaldo lagersaldo = new Lagersaldo();
             lagersaldo.Show();
+        }
+
+        private void Executebtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

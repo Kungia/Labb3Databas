@@ -110,6 +110,7 @@ namespace Labb_3___Databas
             this.Executebtn.TabIndex = 9;
             this.Executebtn.Text = "Bekräfta";
             this.Executebtn.UseVisualStyleBackColor = true;
+            this.Executebtn.Click += new System.EventHandler(this.Executebtn_Click);
             // 
             // Transactionlabel
             // 

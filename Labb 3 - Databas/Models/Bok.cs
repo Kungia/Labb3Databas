@@ -10,8 +10,19 @@ namespace Labb_3___Databas.Models
     [Table("Böcker")]
     class Bok
     {
-        public int Id { get; set; }
+        [Column("ISBN13")]
+        public float Id { get; set; }
+
         [Column("Titel")]
-        public string Name { get; set; }
+        public string Titel { get; set; }
+
+        [Column("Språk")]
+        public string Språk { get; set; }
+
+        [Column("Pris")]
+        public float Pris { get; set; }
+
+        [Column("Utgivningsår")]
+        public int År { get; set; }
     }
 }

@@ -10,9 +10,13 @@ namespace Labb_3___Databas.Models
     [Table("Butiker")]
     class Butik
     {
+        [Column ("IdentityID")]
         public int Id { get; set; }
 
         [Column("Butiksnamn")]
         public string Name { get; set; }
+
+        [Column("Adress")]
+        public string Adress { get; set; }
     }
 }

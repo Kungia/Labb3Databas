@@ -170,11 +170,11 @@
     <Compile Include="Bookstore Forms\KöpSälj.Designer.cs">
       <DependentUpon>KöpSälj.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bookstore Forms\Lagersaldo.cs">
+    <Compile Include="Bookstore Forms\Lager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bookstore Forms\Lagersaldo.Designer.cs">
-      <DependentUpon>Lagersaldo.cs</DependentUpon>
+    <Compile Include="Bookstore Forms\Lager.Designer.cs">
+      <DependentUpon>Lager.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\LundellsBookstoreContext.cs" />
     <Compile Include="Models\Butik.cs" />
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="Bookstore Forms\KöpSälj.resx">
       <DependentUpon>KöpSälj.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bookstore Forms\Lagersaldo.resx">
-      <DependentUpon>Lagersaldo.cs</DependentUpon>
+    <EmbeddedResource Include="Bookstore Forms\Lager.resx">
+      <DependentUpon>Lager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

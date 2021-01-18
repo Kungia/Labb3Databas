@@ -10,10 +10,14 @@ namespace Labb_3___Databas.Models
     [Table("Lagersaldo")]
     class Lagersaldo
     {
+        [Column("ButikID")]
         public int Id { get; set; }
 
         [Column("ISBN")]
         public float ISBN { get; set; }
+
+        [Column("Antal")]
+        public int Antal { get; set; }
 
     }
 }

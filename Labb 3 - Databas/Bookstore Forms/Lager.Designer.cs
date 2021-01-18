@@ -30,27 +30,27 @@ namespace Labb_3___Databas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lagersaldo));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.LagersaldoDb = new System.Windows.Forms.DataGridView();
             this.KöpSäljbtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LagersaldoDb)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // LagersaldoDb
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LagersaldoDb.AllowUserToAddRows = false;
+            this.LagersaldoDb.AllowUserToDeleteRows = false;
+            this.LagersaldoDb.AllowUserToOrderColumns = true;
+            this.LagersaldoDb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 374);
-            this.dataGridView1.TabIndex = 2;
+            this.LagersaldoDb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LagersaldoDb.Location = new System.Drawing.Point(12, 12);
+            this.LagersaldoDb.Name = "LagersaldoDb";
+            this.LagersaldoDb.ReadOnly = true;
+            this.LagersaldoDb.RowHeadersWidth = 51;
+            this.LagersaldoDb.RowTemplate.Height = 24;
+            this.LagersaldoDb.Size = new System.Drawing.Size(776, 374);
+            this.LagersaldoDb.TabIndex = 2;
             // 
             // KöpSäljbtn
             // 
@@ -69,19 +69,19 @@ namespace Labb_3___Databas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.KöpSäljbtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.LagersaldoDb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "Lagersaldo";
             this.Text = "Lagersaldo";
             this.Load += new System.EventHandler(this.Lagersaldo___Lundells_Bookstore_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LagersaldoDb)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView LagersaldoDb;
         private System.Windows.Forms.Button KöpSäljbtn;
     }
 }

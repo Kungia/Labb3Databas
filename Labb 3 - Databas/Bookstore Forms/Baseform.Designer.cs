@@ -77,7 +77,6 @@ namespace Labb_3___Databas
             this.StoreSelect.Name = "StoreSelect";
             this.StoreSelect.Size = new System.Drawing.Size(202, 100);
             this.StoreSelect.TabIndex = 2;
-            this.StoreSelect.SelectedIndexChanged += new System.EventHandler(this.LagersaldoStoreSelect_SelectedIndexChanged);
             // 
             // BaseForm
             // 
