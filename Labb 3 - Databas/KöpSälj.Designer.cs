@@ -29,6 +29,7 @@ namespace Labb_3___Databas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KöpSälj));
             this.BookSelect = new System.Windows.Forms.ListBox();
             this.SelectBooklabel = new System.Windows.Forms.Label();
             this.Antal = new System.Windows.Forms.Label();
@@ -62,7 +63,7 @@ namespace Labb_3___Databas
             // 
             this.Antal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Antal.AutoSize = true;
-            this.Antal.Location = new System.Drawing.Point(237, 19);
+            this.Antal.Location = new System.Drawing.Point(261, 19);
             this.Antal.Name = "Antal";
             this.Antal.Size = new System.Drawing.Size(71, 17);
             this.Antal.TabIndex = 5;
@@ -71,7 +72,7 @@ namespace Labb_3___Databas
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(240, 39);
+            this.textBox1.Location = new System.Drawing.Point(264, 39);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(93, 22);
             this.textBox1.TabIndex = 6;
@@ -80,7 +81,7 @@ namespace Labb_3___Databas
             // 
             this.RadioKöp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RadioKöp.AutoSize = true;
-            this.RadioKöp.Location = new System.Drawing.Point(240, 84);
+            this.RadioKöp.Location = new System.Drawing.Point(264, 84);
             this.RadioKöp.Name = "RadioKöp";
             this.RadioKöp.Size = new System.Drawing.Size(81, 21);
             this.RadioKöp.TabIndex = 7;
@@ -92,7 +93,7 @@ namespace Labb_3___Databas
             // 
             this.RadioSälj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RadioSälj.AutoSize = true;
-            this.RadioSälj.Location = new System.Drawing.Point(240, 122);
+            this.RadioSälj.Location = new System.Drawing.Point(264, 122);
             this.RadioSälj.Name = "RadioSälj";
             this.RadioSälj.Size = new System.Drawing.Size(79, 21);
             this.RadioSälj.TabIndex = 8;
@@ -103,7 +104,7 @@ namespace Labb_3___Databas
             // Executebtn
             // 
             this.Executebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Executebtn.Location = new System.Drawing.Point(234, 161);
+            this.Executebtn.Location = new System.Drawing.Point(258, 161);
             this.Executebtn.Name = "Executebtn";
             this.Executebtn.Size = new System.Drawing.Size(99, 26);
             this.Executebtn.TabIndex = 9;
@@ -114,7 +115,7 @@ namespace Labb_3___Databas
             // 
             this.Transactionlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Transactionlabel.AutoSize = true;
-            this.Transactionlabel.Location = new System.Drawing.Point(9, 223);
+            this.Transactionlabel.Location = new System.Drawing.Point(9, 237);
             this.Transactionlabel.Name = "Transactionlabel";
             this.Transactionlabel.Size = new System.Drawing.Size(414, 17);
             this.Transactionlabel.TabIndex = 10;
@@ -123,7 +124,7 @@ namespace Labb_3___Databas
             // Lagersaldoshortcut
             // 
             this.Lagersaldoshortcut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Lagersaldoshortcut.Location = new System.Drawing.Point(15, 262);
+            this.Lagersaldoshortcut.Location = new System.Drawing.Point(15, 276);
             this.Lagersaldoshortcut.Name = "Lagersaldoshortcut";
             this.Lagersaldoshortcut.Size = new System.Drawing.Size(99, 26);
             this.Lagersaldoshortcut.TabIndex = 11;
@@ -135,7 +136,7 @@ namespace Labb_3___Databas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 300);
+            this.ClientSize = new System.Drawing.Size(452, 314);
             this.Controls.Add(this.Lagersaldoshortcut);
             this.Controls.Add(this.Transactionlabel);
             this.Controls.Add(this.Executebtn);
@@ -145,6 +146,7 @@ namespace Labb_3___Databas
             this.Controls.Add(this.Antal);
             this.Controls.Add(this.SelectBooklabel);
             this.Controls.Add(this.BookSelect);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(550, 450);
             this.Name = "KöpSälj";
             this.Text = " ";

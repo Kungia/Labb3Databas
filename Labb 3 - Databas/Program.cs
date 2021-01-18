@@ -17,6 +17,8 @@ namespace Labb_3___Databas
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new BaseForm());
+
+
         }
     }
 }
