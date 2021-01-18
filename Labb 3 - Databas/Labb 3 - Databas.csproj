@@ -158,33 +158,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Baseform.cs">
+    <Compile Include="Bookstore Forms\Baseform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Baseform.Designer.cs">
+    <Compile Include="Bookstore Forms\Baseform.Designer.cs">
       <DependentUpon>Baseform.cs</DependentUpon>
     </Compile>
-    <Compile Include="KöpSälj.cs">
+    <Compile Include="Bookstore Forms\KöpSälj.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KöpSälj.Designer.cs">
+    <Compile Include="Bookstore Forms\KöpSälj.Designer.cs">
       <DependentUpon>KöpSälj.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lagersaldo.cs">
+    <Compile Include="Bookstore Forms\Lagersaldo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lagersaldo.Designer.cs">
+    <Compile Include="Bookstore Forms\Lagersaldo.Designer.cs">
       <DependentUpon>Lagersaldo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\LundellsBookstoreContext.cs" />
+    <Compile Include="Models\Butik.cs" />
+    <Compile Include="Models\Bok.cs" />
+    <Compile Include="Models\Lagersaldo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Baseform.resx">
+    <EmbeddedResource Include="Bookstore Forms\Baseform.resx">
       <DependentUpon>Baseform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KöpSälj.resx">
+    <EmbeddedResource Include="Bookstore Forms\KöpSälj.resx">
       <DependentUpon>KöpSälj.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lagersaldo.resx">
+    <EmbeddedResource Include="Bookstore Forms\Lagersaldo.resx">
       <DependentUpon>Lagersaldo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -210,6 +214,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
