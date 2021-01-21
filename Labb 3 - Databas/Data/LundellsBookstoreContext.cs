@@ -7,7 +7,8 @@ namespace Labb_3___Databas.Data
     {
         public DbSet<Butik> Butiker { get; set; }
        // public DbSet<Bok> Böcker { get; set; }
-        public DbSet<Lagersaldo> Lagersaldos { get; set; }
+       
+       //public DbSet<Lagersaldo> Lagersaldos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
