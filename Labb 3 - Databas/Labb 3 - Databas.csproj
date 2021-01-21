@@ -158,39 +158,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bookstore Forms\Baseform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bookstore Forms\Baseform.Designer.cs">
-      <DependentUpon>Baseform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Bookstore Forms\KöpSälj.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bookstore Forms\KöpSälj.Designer.cs">
-      <DependentUpon>KöpSälj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Bookstore Forms\Lager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bookstore Forms\Lager.Designer.cs">
-      <DependentUpon>Lager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data\LundellsBookstoreContext.cs" />
-    <Compile Include="Models\Butik.cs" />
-    <Compile Include="Models\Bok.cs" />
-    <Compile Include="Models\Lagersaldo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Bookstore Forms\Baseform.resx">
-      <DependentUpon>Baseform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bookstore Forms\KöpSälj.resx">
-      <DependentUpon>KöpSälj.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bookstore Forms\Lager.resx">
-      <DependentUpon>Lager.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
