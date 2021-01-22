@@ -1,5 +1,5 @@
 ﻿
-namespace Labb_3___Databas
+namespace Labb3
 {
     partial class BaseForm
     {
@@ -39,9 +39,10 @@ namespace Labb_3___Databas
             // LagersaldoBtn
             // 
             this.LagersaldoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LagersaldoBtn.Location = new System.Drawing.Point(259, 115);
+            this.LagersaldoBtn.Location = new System.Drawing.Point(259, 144);
+            this.LagersaldoBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LagersaldoBtn.Name = "LagersaldoBtn";
-            this.LagersaldoBtn.Size = new System.Drawing.Size(124, 35);
+            this.LagersaldoBtn.Size = new System.Drawing.Size(124, 44);
             this.LagersaldoBtn.TabIndex = 0;
             this.LagersaldoBtn.Text = "Lagersaldo";
             this.LagersaldoBtn.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@ namespace Labb_3___Databas
             // BuySellBtn
             // 
             this.BuySellBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuySellBtn.Location = new System.Drawing.Point(259, 50);
+            this.BuySellBtn.Location = new System.Drawing.Point(259, 62);
+            this.BuySellBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuySellBtn.Name = "BuySellBtn";
-            this.BuySellBtn.Size = new System.Drawing.Size(124, 35);
+            this.BuySellBtn.Size = new System.Drawing.Size(124, 44);
             this.BuySellBtn.TabIndex = 1;
             this.BuySellBtn.Text = "Köp/Sälj";
             this.BuySellBtn.UseVisualStyleBackColor = true;
@@ -61,38 +63,41 @@ namespace Labb_3___Databas
             // selectlabel
             // 
             this.selectlabel.AutoSize = true;
-            this.selectlabel.Location = new System.Drawing.Point(12, 30);
+            this.selectlabel.Location = new System.Drawing.Point(12, 38);
             this.selectlabel.Name = "selectlabel";
-            this.selectlabel.Size = new System.Drawing.Size(69, 17);
+            this.selectlabel.Size = new System.Drawing.Size(73, 20);
             this.selectlabel.TabIndex = 3;
             this.selectlabel.Text = "Välj butik:";
             // 
             // StoreSelect
             // 
             this.StoreSelect.FormattingEnabled = true;
-            this.StoreSelect.ItemHeight = 16;
-            this.StoreSelect.Location = new System.Drawing.Point(12, 50);
-            this.StoreSelect.MaximumSize = new System.Drawing.Size(202, 100);
-            this.StoreSelect.MinimumSize = new System.Drawing.Size(202, 100);
+            this.StoreSelect.ItemHeight = 20;
+            this.StoreSelect.Location = new System.Drawing.Point(12, 62);
+            this.StoreSelect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.StoreSelect.MaximumSize = new System.Drawing.Size(202, 124);
+            this.StoreSelect.MinimumSize = new System.Drawing.Size(202, 124);
             this.StoreSelect.Name = "StoreSelect";
-            this.StoreSelect.Size = new System.Drawing.Size(202, 100);
+            this.StoreSelect.Size = new System.Drawing.Size(202, 124);
             this.StoreSelect.TabIndex = 2;
             // 
             // BaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 184);
+            this.ClientSize = new System.Drawing.Size(400, 230);
             this.Controls.Add(this.selectlabel);
             this.Controls.Add(this.StoreSelect);
             this.Controls.Add(this.BuySellBtn);
             this.Controls.Add(this.LagersaldoBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(418, 231);
-            this.MinimumSize = new System.Drawing.Size(418, 231);
+            this.MaximumSize = new System.Drawing.Size(418, 277);
+            this.MinimumSize = new System.Drawing.Size(418, 277);
             this.Name = "BaseForm";
             this.Text = "Lundells Bookstore";
+            this.Load += new System.EventHandler(this.BaseForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

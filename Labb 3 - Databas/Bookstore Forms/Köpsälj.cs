@@ -1,35 +1,30 @@
-﻿using Labb_3___Databas.Data;
-using Labb_3___Databas.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
-namespace Labb_3___Databas
+namespace Labb3
 {
-    public partial class KöpSälj : Form
+    public partial class Köpsälj : Form
     {
-        public KöpSälj()
+        public object StoreSelect { get; }
+        public static string selectedBook;
+        //Antalselect = textbox för antal
+        public Köpsälj()
         {
             InitializeComponent();
-            using (var db = new LundellsBookstoreContext())
-            {
-
-
-            }
+            // using (var db = new LundellsBookstoreContext())
+            // {
+            //     foreach (var item in db.Böcker.ToList())
+            //     {
+            //         BookSelect.Items.Add(item.Titel);
+            //     }
+            //     selectedBook = (string)BookSelect.SelectedItem;
+            // }
         }
-
         private void Lagersaldoshortcut_Click(object sender, EventArgs e)
         {
             Lagersaldo lagersaldo = new Lagersaldo();
             lagersaldo.Show();
         }
-
         private void Executebtn_Click(object sender, EventArgs e)
         {
 

@@ -5,13 +5,12 @@ using System.Collections.Generic;
 
 namespace Labb3
 {
-    public partial class Lagersaldo
+    public partial class Förlag
     {
-        public int ButikId { get; set; }
+        public double FörlagsId { get; set; }
+        public string Förlagsnamn { get; set; }
         public long Isbn { get; set; }
-        public int Antal { get; set; }
 
-        public virtual Butiker Butik { get; set; }
         public virtual Böcker IsbnNavigation { get; set; }
     }
 }

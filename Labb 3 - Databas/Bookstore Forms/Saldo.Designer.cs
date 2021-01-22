@@ -1,7 +1,7 @@
 ﻿
-namespace Labb_3___Databas
+namespace Labb3
 {
-    partial class Lagersaldo
+    partial class Saldo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Labb_3___Databas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lagersaldo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Saldo));
             this.LagersaldoDb = new System.Windows.Forms.DataGridView();
             this.KöpSäljbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LagersaldoDb)).BeginInit();
@@ -40,40 +40,43 @@ namespace Labb_3___Databas
             this.LagersaldoDb.AllowUserToAddRows = false;
             this.LagersaldoDb.AllowUserToDeleteRows = false;
             this.LagersaldoDb.AllowUserToOrderColumns = true;
-            this.LagersaldoDb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.LagersaldoDb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LagersaldoDb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LagersaldoDb.Location = new System.Drawing.Point(12, 12);
+            this.LagersaldoDb.Location = new System.Drawing.Point(12, 15);
+            this.LagersaldoDb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LagersaldoDb.Name = "LagersaldoDb";
             this.LagersaldoDb.ReadOnly = true;
             this.LagersaldoDb.RowHeadersWidth = 51;
             this.LagersaldoDb.RowTemplate.Height = 24;
-            this.LagersaldoDb.Size = new System.Drawing.Size(776, 374);
+            this.LagersaldoDb.Size = new System.Drawing.Size(776, 468);
             this.LagersaldoDb.TabIndex = 2;
             // 
             // KöpSäljbtn
             // 
             this.KöpSäljbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.KöpSäljbtn.Location = new System.Drawing.Point(689, 412);
+            this.KöpSäljbtn.Location = new System.Drawing.Point(689, 515);
+            this.KöpSäljbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.KöpSäljbtn.Name = "KöpSäljbtn";
-            this.KöpSäljbtn.Size = new System.Drawing.Size(99, 26);
+            this.KöpSäljbtn.Size = new System.Drawing.Size(99, 32);
             this.KöpSäljbtn.TabIndex = 10;
             this.KöpSäljbtn.Text = "Köp/Sälj";
             this.KöpSäljbtn.UseVisualStyleBackColor = true;
             this.KöpSäljbtn.Click += new System.EventHandler(this.KöpSäljbtn_Click);
             // 
-            // Lagersaldo
+            // Saldo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 562);
             this.Controls.Add(this.KöpSäljbtn);
             this.Controls.Add(this.LagersaldoDb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.Name = "Lagersaldo";
-            this.Text = "Lagersaldo";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Saldo";
+            this.Text = "Saldo";
             this.Load += new System.EventHandler(this.Lagersaldo___Lundells_Bookstore_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LagersaldoDb)).EndInit();
             this.ResumeLayout(false);
