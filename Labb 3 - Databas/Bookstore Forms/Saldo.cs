@@ -1,34 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Labb3
+namespace Labb3.Bookstore_Forms
 {
     public partial class Saldo : Form
     {
-        private string selectedStore = BaseForm.selectedStore;
+        public string selectedstore = BaseForm.selectedStore;
+        public int storeID;
+        public List<Lagersaldo> butikssaldo = new List<Lagersaldo>();
         public Saldo()
         {
             InitializeComponent();
-         //   using (var db = new LundellsBookstoreContext())
+            storeID = BaseForm.butikslista.Where(i => i.Butiksnamn == selectedstore).Select(i => i.IdentityId).First();
+            using (var db = new LundellsBookstoreContext())
             {
-           
-                //db.Lagersaldos.Select(i => i);
+                foreach (var item in db.Lagersaldos.Where(i=> i.ButikId == storeID))
+                {
+                    butikssaldo.Add(item);
+                }
+                datatable.DataSource = butikssaldo;
+         
+                
             }
-        }
 
-        private void Lagersaldo___Lundells_Bookstore_Load(object sender, EventArgs e)
+
+
+        }
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            Saldo lagersaldo = new Saldo();
-            lagersaldo.Show();
+
         }
-
-        private void KöpSäljbtn_Click(object sender, EventArgs e)
-        {
-            Köpsälj köpsälj = new Köpsälj();
-            köpsälj.Show();
-        }
-
-
     }
 }

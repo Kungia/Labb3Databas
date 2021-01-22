@@ -80,6 +80,7 @@ namespace Labb3
             this.StoreSelect.Name = "StoreSelect";
             this.StoreSelect.Size = new System.Drawing.Size(202, 124);
             this.StoreSelect.TabIndex = 2;
+            this.StoreSelect.SelectedIndexChanged += new System.EventHandler(this.StoreSelect_SelectedIndexChanged);
             // 
             // BaseForm
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Labb3.Bookstore_Forms;
+using System;
 using System.Windows.Forms;
 
 namespace Labb3
@@ -11,19 +12,19 @@ namespace Labb3
         public Köpsälj()
         {
             InitializeComponent();
-            // using (var db = new LundellsBookstoreContext())
-            // {
-            //     foreach (var item in db.Böcker.ToList())
-            //     {
-            //         BookSelect.Items.Add(item.Titel);
-            //     }
-            //     selectedBook = (string)BookSelect.SelectedItem;
-            // }
+            using (var db = new LundellsBookstoreContext())
+            {
+                foreach (var bok in db.Böckers)
+                {
+                    BookSelect.Items.Add(bok.Titel);
+                }
+                selectedBook = (string)BookSelect.SelectedItem;
+            }
         }
         private void Lagersaldoshortcut_Click(object sender, EventArgs e)
         {
-            Lagersaldo lagersaldo = new Lagersaldo();
-            lagersaldo.Show();
+            Saldo opensaldo = new Saldo();
+            opensaldo.Show();
         }
         private void Executebtn_Click(object sender, EventArgs e)
         {
