@@ -25,17 +25,13 @@ namespace Labb3.Bookstore_Forms
                 {
                     butikssaldo.Add(item);
                 }
-                datatable.DataSource = butikssaldo;
-         
-                
+                datatable.DataSource = butikssaldo;       
             }
-
-
-
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Köpsälj köpsälj = new Köpsälj();
+            köpsälj.Show();
         }
     }
 }

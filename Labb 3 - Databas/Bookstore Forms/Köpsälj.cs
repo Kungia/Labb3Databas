@@ -33,7 +33,37 @@ namespace Labb3
         }
         private void Executebtn_Click(object sender, EventArgs e)
         {
+            using (var db = new LundellsBookstoreContext())
+            {
+                string valdbok = BookSelect.SelectedItem.ToString();
+                int antal = Int32.Parse(AntalSelect.Text.ToString());
 
+                foreach (var book in booklist)
+                {
+                    if (valdbok == book.Titel)
+                    {
+
+                        var item = (Lagersaldo)db.Lagersaldos.Select(i => i).Where(i => i.Isbn == book.Isbn13).First();
+
+                        if (item.ButikId == storeID)
+                        {
+                            if (RadioKöp.Checked)
+                            {
+                                item.Antal += antal;
+                            }
+                            else if (RadioSälj.Checked)
+                            {
+                                item.Antal -= antal;
+                            }
+                            db.Lagersaldos.Update(item);
+                        }
+                    }
+                }
+                db.SaveChanges();
+                BookSelect.DataSource = booklist.Select(i => i.Titel).ToList();
+                
+            }
         }
     }
 }
+
